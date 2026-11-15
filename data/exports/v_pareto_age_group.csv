@@ -1,0 +1,5 @@
+age_group,age_group_order,machines,failure_events,component_failures,events_per_machine,pct_of_events,cum_pct,pct_of_fleet
+16-20,4,29,265,276,9.14,36.9,36.9,29.0
+11-15,3,24,199,221,8.29,27.7,64.5,24.0
+6-10,2,26,135,140,5.19,18.8,83.3,26.0
+0-5,1,21,120,124,5.71,16.7,100.0,21.0

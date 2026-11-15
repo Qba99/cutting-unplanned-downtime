@@ -1,0 +1,6 @@
+scope,machines,corr_age_failures,extra_failures_per_year
+all machines,100,0.46,0.261
+model4,32,0.54,0.251
+model1,16,0.39,0.214
+model3,35,0.47,0.178
+model2,17,0.47,0.215

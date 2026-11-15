@@ -1,0 +1,5 @@
+comp,failures,mtbf_hours,mtbf_days,gaps,mean_gap_hours,median_gap_hours
+comp2,259,3382,140.9,167,2252,1800
+comp1,192,4563,190.1,106,2711,2160
+comp4,179,4894,203.9,130,2222,1800
+comp3,131,6687,278.6,98,2064,1800

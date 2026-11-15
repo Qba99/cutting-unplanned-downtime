@@ -1,0 +1,22 @@
+check_id,area,check_name,expected,actual,result
+DQ01,Row counts,machines rows,100,100,PASS
+DQ02,Row counts,telemetry rows,"876,100","876,100",PASS
+DQ03,Row counts,errors rows,"3,919","3,919",PASS
+DQ04,Row counts,maint rows,"3,286","3,286",PASS
+DQ05,Row counts,failures rows,761,761,PASS
+DQ06,Telemetry,machines with telemetry,100,100,PASS
+DQ07,Telemetry,first and last reading,2015-01-01 06:00 to 2016-01-01 06:00,2015-01-01 06:00 to 2016-01-01 06:00,PASS
+DQ08,Telemetry,"machines without exactly 8,761 hourly rows",0,0,PASS
+DQ09,Telemetry,gaps: consecutive readings not 1 hour apart,0,0,PASS
+DQ10,Telemetry,readings of zero or below (any sensor),0,0,PASS
+DQ11,Sensors,range and outliers beyond fleet mean +/- 3 sd,"kept, not removed",volt 97.3-255.1 (0.35% out); rotate 138.4-695.0 (0.40% out); pressure 51.2-186.0 (0.78% out); vibration 14.9-76.8 (0.54% out),INFO
+DQ12,Timing,errors and failures outside the telemetry period,0,0,PASS
+DQ13,Timing,timestamps not on the full hour (all tables),0,0,PASS
+DQ14,Timing,hour of day failures are logged,n/a,06:00 743; 03:00 18,INFO
+DQ15,Timing,maint rows outside calendar 2015,n/a,400 before (from 2014-06-01); 7 after,INFO
+DQ16,Failures,failure events (machine + hour),n/a,719 events from 761 component failures; 42 events with 2+ components,INFO
+DQ17,Failures,failures with a same-day replacement in maint,n/a,743 of 761; unmatched all at 2015-01-02 03:00,INFO
+DQ18,Failures,2015 replacements by type,n/a,2136 scheduled; 743 after a failure,INFO
+DQ19,Failures,machines with no failure in 2015,n/a,"2 (machine 6, 77)",INFO
+DQ20,Machines,machines by model,n/a,model1 16; model2 17; model3 35; model4 32,INFO
+DQ21,Machines,machines by age group,n/a,0-5 yrs 21; 6-10 yrs 26; 11-15 yrs 24; 16-20 yrs 29,INFO

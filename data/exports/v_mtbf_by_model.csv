@@ -1,0 +1,5 @@
+model,machines,failure_events,mtbf_hours,mtbf_days,gaps,mean_gap_hours,median_gap_hours
+model1,16,175,801,33.4,159,768,720
+model2,17,160,931,38.8,143,929,720
+model3,35,212,1446,60.3,178,1265,1080
+model4,32,172,1630,67.9,141,1470,1080

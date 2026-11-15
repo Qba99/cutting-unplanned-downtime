@@ -1,0 +1,5 @@
+comp,failures,pct_of_failures,cum_pct,pareto_rank
+comp2,259,34.0,34.0,1
+comp1,192,25.2,59.3,2
+comp4,179,23.5,82.8,3
+comp3,131,17.2,100.0,4
