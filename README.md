@@ -10,6 +10,20 @@ Work in progress (planned finish: 20 December 2026). Problem statement and metri
 
 To reproduce, download the five CSVs into `data/raw/` (they are not committed; telemetry is 80 MB).
 
+## How to reproduce
+
+Needs Python 3.10+ and PostgreSQL 13+ (built and tested on PostgreSQL 16).
+
+```bash
+python -m venv .venv && .venv\Scripts\activate   # Windows; on macOS/Linux: source .venv/bin/activate
+pip install -r requirements.txt
+
+# download the five CSVs from Kaggle into data/raw/, then:
+python src/load_db.py      # creates the database, loads the tables, builds the views, runs the checks
+```
+
+`load_db.py` reads the standard `PGHOST`/`PGPORT`/`PGUSER` variables and asks for the password, which is never written to disk. It loads the 876,100 telemetry rows with `COPY` in about 15 seconds, then writes the data-quality results to [`docs/02_data_quality_log.md`](docs/02_data_quality_log.md). After editing any SQL file, `python src/load_db.py --views-only` rebuilds the views without reloading the data.
+
 ## Repository layout
 
 | Folder | Contents |
