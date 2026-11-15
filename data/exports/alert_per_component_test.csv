@@ -1,0 +1,5 @@
+component,sensor,error_codes,failures,caught,alerts,false_alarms,recall,precision,median_lead_hours
+comp1,volt,error1,51,50,58,8,0.9803921568627451,0.8620689655172413,19.0
+comp2,rotate,"error2, error3",91,89,111,22,0.978021978021978,0.8018018018018018,19.0
+comp3,pressure,error4,40,40,47,7,1.0,0.851063829787234,19.0
+comp4,vibration,error5,57,53,57,4,0.9298245614035088,0.9298245614035088,19.0

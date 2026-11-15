@@ -21,6 +21,9 @@ pip install -r requirements.txt
 # download the five CSVs from Kaggle into data/raw/, then:
 python src/load_db.py      # creates the database, loads the tables, builds the views, runs the checks
 python src/export_views.py # writes the analysis views to data/exports/*.csv for Excel and the notebooks
+
+# then run the notebooks in order (Run All): 01_eda, 02_control_charts, 03_alert_evaluation
+# they read data/raw/ and data/exports/, write charts to images/ and alert results to data/exports/alert_*.csv
 ```
 
 `load_db.py` reads the standard `PGHOST`/`PGPORT`/`PGUSER` variables and asks for the password, which is never written to disk. It loads the 876,100 telemetry rows with `COPY` in about 15 seconds, then writes the data-quality results to [`docs/02_data_quality_log.md`](docs/02_data_quality_log.md). After editing any SQL file, `python src/load_db.py --views-only` rebuilds the views without reloading the data.

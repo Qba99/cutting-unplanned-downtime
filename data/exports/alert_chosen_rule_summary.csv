@@ -1,0 +1,4 @@
+period,rule,threshold_sigma,hours_in_a_row,failures,caught,missed,alerts,true_alerts,false_alarms,recall,precision,median_lead_hours
+train (Jan-Aug),E. Signature match,2.5,6,493,463,30,517,463,54,0.9391480730223124,0.8955512572533849,19.0
+test (Sep-Dec),E. Signature match,2.5,6,226,220,6,256,220,36,0.9734513274336283,0.859375,19.0
+full year 2015,E. Signature match,2.5,6,719,685,34,773,685,88,0.952712100139082,0.8861578266494179,19.0
