@@ -6,7 +6,7 @@ An analysis of one year of failures, error codes, maintenance records and 876,10
 
 - 📄 **[One-page summary for the maintenance manager (PDF)](docs/executive_summary.pdf)**
 - 📊 **[Excel business case](excel/PdM_business_case.xlsx)**: inputs, cost model, Power Query, sensitivity Data Table, Scenario Manager
-- 📓 **[Self-contained notebook](notebooks/kaggle_predictive_maintenance.ipynb)**: the whole analysis on the raw Kaggle files, no database needed
+- 📓 **[Self-contained notebook](https://www.kaggle.com/code/jakubsiuda/cutting-unplanned-downtime-on-a-machine-fleet)** (runs in the browser on the raw Kaggle files)
 
 > **The data is synthetic** ([Microsoft Azure Predictive Maintenance](https://www.kaggle.com/datasets/arnabbiswas1/microsoft-azure-predictive-maintenance)). The findings show what this method would reveal on real plant data, not facts about a real plant. Every cost in the business case is a labelled assumption.
 
